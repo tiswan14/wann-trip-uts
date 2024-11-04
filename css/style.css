@@ -1,0 +1,1152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green: #1ec6b6;
+  --light-grey: #f7f7f7;
+  --dark: #0e1010;
+  --trans: all 0.3s ease-in-out;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 70px;
+}
+
+h2 {
+  font-size: 1.6rem; /* 32px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+p {
+  font-size: 1rem; /* 16px */
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+button a {
+  color: #fff;
+}
+nav {
+  background-color: transparent;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .container-tiswan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  padding-left: 35px;
+}
+
+nav .nav-logo-tiswan {
+  color: #fff;
+}
+
+nav .nav-logo-tiswan h2 span {
+  color: var(--green);
+}
+
+nav .nav-list-tiswan ul {
+  display: flex;
+  gap: 10px;
+  transition: var(--trans);
+}
+
+nav .nav-list-tiswan ul li.active {
+  border-radius: 4px;
+  background: var(--green);
+}
+
+nav .nav-list-tiswan ul li:hover {
+  border-radius: 4px;
+  background: var(--green);
+}
+
+nav .nav-list-tiswan ul li a {
+  margin: 10px;
+  padding: 6px 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-cng {
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
+  box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
+  -webkit-transition: var(--trans);
+  -o-transition: var(--trans);
+  transition: var(--trans);
+}
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/header-bg.jpg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+header .container-tiswan {
+  margin-top: 140px;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  -webkit-animation: bounce-in-top 1.1s both;
+  animation: bounce-in-top 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+header p {
+  font-size: 1.3rem;
+  margin: 25px 0px;
+}
+
+header .btn {
+  background-color: var(--green);
+  color: #fff;
+  transition: var(--trans);
+}
+
+. header .btn:hover {
+  background-color: #fff;
+  color: var(--green);
+}
+
+nav .nav-icon-show-tiswan {
+  display: none;
+}
+nav ul #nav-close-btn-tiswan {
+  display: none;
+}
+
+#destinasi-populer-tiswan {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.destinasi-container-tiswan {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.destinasi-item-tiswan {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destinasi-item-tiswan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.destinasi-item-tiswan img {
+  width: 100%;
+  height: auto;
+}
+
+.destinasi-item-tiswan h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.destinasi-item-tiswan p {
+  padding: 0 1rem 1rem;
+}
+
+#our-services-tiswan {
+  background-image: url('../img/services-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+.services-container-tiswan {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+}
+
+.service-items-tiswan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item-tiswan {
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.service-item-tiswan:hover {
+  transform: translateY(-5px);
+}
+
+#testimonials-tiswan {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.testimonials-container-tiswan {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.p-description-tiswan {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.testimonial-items-tiswan {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonial-item-tiswan {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.testimonial-item-tiswan img {
+  width: 200px;
+  border-radius: 15px;
+}
+.testimonial-item-tiswan p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-item-tiswan h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+#video-tiswan {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.video-wrapper-tiswan {
+  position: relative;
+  display: inline-block;
+}
+
+.video-wrapper-tiswan video {
+  width: 100%;
+}
+
+#play-btn-tiswan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 3.7rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#play-btn-tiswan:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.py-4-tiswan {
+  padding: 3rem 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.container-tiswan {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.footer-row-tiswan {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-item-tiswan {
+  flex: 1 1 200px;
+  min-width: 220px;
+  margin-bottom: 50px;
+}
+
+.site-brand-tiswan {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-brand-tiswan span {
+  color: var(--green);
+}
+
+.text-tiswan {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.social-links-tiswan {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links-tiswan li a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links-tiswan li a:hover {
+  color: var(--green);
+}
+
+.footer-item-tiswan ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  position: relative;
+}
+
+.footer-item-tiswan ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-item-tiswan ul li a:hover {
+  color: var(--green);
+}
+
+/* Newsletter Subscription */
+.subscribe-form-tiswan h2 {
+  margin-bottom: 1rem;
+}
+
+.flex-tiswan {
+  display: flex;
+}
+
+.form-control-tiswan {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.btn-tiswan {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-tiswan:hover {
+  background-color: var(--green);
+}
+
+footer .copyright-tiswan {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  text-align: center;
+  padding: 16px 0px;
+}
+
+/* Halaman About */
+#sejarah-pangandaran-tiswan {
+  height: auto;
+  padding: 30px;
+}
+
+#sejarah-pangandaran-tiswan .container-tiswan {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#sejarah-pangandaran-tiswan .img-sejarah-tiswan img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.desc-sejarah-tiswan {
+  flex: 1;
+}
+
+#sejarah-pangandaran-tiswan h2 {
+  font-size: 36px;
+}
+
+#sejarah-pangandaran-tiswan p {
+  font-size: 17px;
+}
+
+/* Halaman About */
+
+/* Halaman Visi */
+
+#visi-misi-pangandaran-tiswan {
+  padding: 90px 40px;
+}
+#visi-misi-pangandaran-tiswan h2 {
+  text-align: center;
+}
+#visi-misi-pangandaran-tiswan .container-tiswan {
+  margin: 0 auto;
+}
+
+#visi-misi-pangandaran-tiswan .visi-tiswan,
+#visi-misi-pangandaran-tiswan .misi-tiswan {
+  margin: 20px 0;
+  text-align: left;
+}
+
+#visi-misi-pangandaran-tiswan h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#visi-misi-pangandaran-tiswan h3 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+#visi-misi-pangandaran-tiswan ol {
+  list-style: decimal !important;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+#visi-misi-pangandaran-tiswan ol {
+  counter-reset: listCounter;
+  padding-left: 20px;
+}
+
+#visi-misi-pangandaran-tiswan ol li {
+  counter-increment: listCounter;
+  position: relative;
+  padding-left: 25px;
+}
+
+#visi-misi-pangandaran-tiswan ol li::before {
+  content: counter(listCounter) '. ';
+  position: absolute;
+  left: 0;
+}
+
+#visi-misi-pangandaran-tiswan .img-visi-misi-tiswan {
+  display: flex;
+  justify-content: center;
+}
+
+#visi-misi-pangandaran-tiswan .img-visi-misi-tiswan img {
+  max-width: 100%;
+}
+
+#buku-tamu-form-tiswan {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#buku-tamu-form-tiswan h2 {
+  font-size: 26px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#buku-tamu-form-tiswan p {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Styling Input dan Textarea */
+#buku-tamu-form-tiswan input[type='text'],
+#buku-tamu-form-tiswan input[type='email'],
+#buku-tamu-form-tiswan textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#buku-tamu-form-tiswan input[type='text']:focus,
+#buku-tamu-form-tiswan input[type='email']:focus,
+#buku-tamu-form-tiswan textarea:focus {
+  border-color: var(--green);
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+#buku-tamu-form-tiswan button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#buku-tamu-form-tiswan button:hover {
+  background: rgb(59, 238, 214);
+}
+
+#daftar-pesan-tamu-tiswan {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--light-grey);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#daftar-pesan-tamu-tiswan h2 {
+  text-align: center;
+  color: var(--dark);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.pesan-item-tiswan {
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.pesan-item-tiswan h3 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.pesan-item-tiswan p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.tanggal-tiswan {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #999;
+  text-align: right;
+}
+
+#lokasi-kontak-tiswan {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--light-grey);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#lokasi-kontak-tiswan h2 {
+  text-align: center;
+  color: var(--dark);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#lokasi-kontak-tiswan p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+iframe {
+  border: 0;
+  border-radius: 5px;
+}
+
+/* Halaman Blog  */
+
+#artikel-terbaru-tiswan {
+  padding: 50px 0px;
+}
+
+#artikel-terbaru-tiswan h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.artikel-item-tiswan {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: var(--light-grey);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artikel-image-tiswan {
+  width: 30%;
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
+}
+
+.artikel-content-tiswan {
+  padding: 15px;
+  flex: 1;
+}
+
+.artikel-content-tiswan h3 {
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.artikel-content-tiswan span {
+  display: block;
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.artikel-content-tiswan p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.btn-read-more-tiswan {
+  background-color: var(--green);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-read-more-tiswan:hover {
+  background-color: rgb(42, 223, 236);
+}
+
+.pagination-tiswan {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0px 80px 40px;
+}
+
+.pagination-tiswan a {
+  text-decoration: none;
+  background-color: var(--green);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination-tiswan a:hover {
+  border: 1px solid var(--green);
+  color: var(--green);
+  background: #fff;
+}
+
+/* Halaman Destinasi */
+
+#destinasi-page-tiswan {
+  padding: 50px 0;
+}
+
+#destinasi-page-tiswan h2 {
+  font-size: 36px;
+}
+#destinasi-page-tiswan h2,
+#destinasi-page-tiswan .p {
+  text-align: center;
+}
+
+#destinasi-page-tiswan .p {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#destinasi-page-tiswan .container-tiswan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.destinasi-page-item-tiswan {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+  width: 300px;
+}
+
+.destinasi-page-item-tiswan h3 {
+  font-size: 18px;
+}
+
+.destinasi-page-item-tiswan p {
+  font-size: 16px;
+}
+.destinasi-page-item-tiswan img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.destinasi-page-item-tiswan img:hover {
+  transform: scale(1.1);
+}
+
+.destinasi-page-item-tiswan h3 {
+  color: #444444;
+}
+
+.destinasi-page-item-tiswan p {
+  color: #333333;
+}
+
+/* Halaman Event */
+
+#event-tiswan {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#event-tiswan h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.event-item-tiswan {
+  display: flex;
+  align-items: center;
+  padding: 25px 20px;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+}
+
+.event-item-tiswan img {
+  border-radius: 5px;
+  width: 100%;
+  max-height: 175px;
+  object-fit: cover;
+}
+
+.desc-event-tiswan {
+  text-align: left;
+  padding: 10px;
+}
+.desc-event-tiswan h3 {
+  color: #444444;
+}
+
+.desc-event-tiswan p {
+  color: #333333;
+}
+.desc-event-tiswan h4 {
+  color: var(--green);
+}
+
+@media (max-width: 768px) {
+  nav .container-tiswan {
+    padding: 15px 0px;
+    padding-left: 40px;
+  }
+  nav .nav-list-tiswan #under-list-tiswan {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    right: -300px;
+    top: 0;
+    transition: var(--trans);
+  }
+
+  nav .nav-list-tiswan #under-list-tiswan li {
+    margin-bottom: 20px;
+  }
+
+  nav .nav-list-tiswan #under-list-tiswan li:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  nav .nav-list-tiswan #under-list-tiswan .active {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  nav .nav-list-tiswan #under-list-tiswan.active {
+    right: 0px;
+  }
+
+  nav .nav-icon-show-tiswan {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    right: 25px;
+    border: none;
+    outline: none;
+  }
+
+  nav ul #nav-close-btn-tiswan {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    background: transparent;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  header button {
+    font-size: 0.9rem;
+  }
+
+  .footer-row-tiswan {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-item-tiswan {
+    margin-bottom: 1px;
+  }
+
+  .flex-tiswan {
+    flex-direction: column;
+  }
+
+  .form-control-tiswan,
+  .btn-tiswan {
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+
+  footer #social-media-tiswan ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  footer .footer-item-tiswan ul li {
+    margin-bottom: 10px;
+  }
+
+  /* Halaman about */
+  #sejarah-pangandaran-tiswan {
+    padding: 10px;
+  }
+
+  #sejarah-pangandaran-tiswan .container-tiswan {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sejarah-pangandaran-tiswan h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #sejarah-pangandaran-tiswan p {
+    font-size: 16px;
+  }
+
+  #sejarah-pangandaran-tiswan .img-sejarah-tiswan img {
+    max-width: 100%;
+  }
+
+  #visi-misi-pangandaran-tiswan h2 {
+    font-size: 30px;
+  }
+
+  #visi-misi-pangandaran-tiswan h3 {
+    font-size: 18px;
+  }
+
+  .form-buku-tamu-tiswan {
+    padding: 15px;
+  }
+
+  .btn-submit-tiswan {
+    font-size: 0.9rem;
+  }
+
+  #daftar-pesan-tamu-tiswan {
+    padding: 15px;
+  }
+
+  #daftar-pesan-tamu-tiswan h2 {
+    font-size: 1.6rem;
+  }
+
+  .pesan-item-tiswan h3 {
+    font-size: 1.3rem;
+  }
+
+  #lokasi-kontak-tiswan {
+    padding: 15px;
+  }
+
+  #lokasi-kontak-tiswan h2 {
+    font-size: 1.6rem;
+  }
+
+  #lokasi-kontak-tiswan p {
+    font-size: 0.9rem;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  #artikel-terbaru-tiswan h2 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .artikel-item-tiswan {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .artikel-image-tiswan {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .artikel-content-tiswan {
+    padding: 15px;
+  }
+
+  .destinasi-item-tiswan {
+    flex-direction: column;
+  }
+
+  .destinasi-item-tiswan img {
+    width: 100%;
+    height: auto;
+  }
+
+  .event-item-tiswan {
+    flex-direction: column;
+  }
+}
