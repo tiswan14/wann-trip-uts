@@ -630,7 +630,6 @@ footer .copyright-tiswan {
 
 #visi-misi-pangandaran-tiswan .img-visi-misi-tiswan {
   width: 100%;
-  background-color: red;
 }
 
 #visi-misi-pangandaran-tiswan .img-visi-misi-tiswan img {
@@ -1155,14 +1154,25 @@ iframe {
 
   .destinasi-item-tiswan {
     flex-direction: column;
+    width: 350px;
   }
 
   .destinasi-item-tiswan img {
     width: 100%;
-    height: auto;
+  }
+
+  .destinasi-page-item-tiswan {
+    width: 400px;
+    padding: 15px;
   }
 
   .event-item-tiswan {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .destinasi-item-tiswan {
+    max-width: 400px;
   }
 }
