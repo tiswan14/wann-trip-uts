@@ -91,8 +91,10 @@
     <!-- Destinasi Populer -->
 
     <section id="destinasi-populer-tiswan">
-      <h2>Destinasi Populer</h2>
-      <p style="font-size: 1.2rem">Kenali beberapa tempat sebelum berwisata</p>
+      <h2 style="font-size: 32px">Destinasi Populer</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 20px">
+        Kenali beberapa tempat sebelum berwisata
+      </p>
       <div class="destinasi-container-tiswan">
         <div class="destinasi-item-tiswan">
           <img src="img/populer1.jpg" alt="Destinasi 1" />
@@ -126,71 +128,58 @@
             menakjubkan serta kesempatan untuk snorkeling dan menyelam.
           </p>
         </div>
+
+        <div class="destinasi-item-tiswan">
+          <img src="img/populer5.jpg" alt="Destinasi 5" />
+          <h3>Citumang</h3>
+          <p>
+            Aliran sungai jernih dengan suasana asri, ideal untuk body rafting,
+            berenang, dan berfoto dengan latar alam yang indah.
+          </p>
+        </div>
+        <div class="destinasi-item-tiswan">
+          <img src="img/populer6.jpg" alt="Destinasi 6" />
+          <h3>Pantai Batu Hiu</h3>
+          <p>
+            Pantai dengan tebing batu ikonik yang memberikan pemandangan eksotis
+            dan ideal untuk bersantai dan menikmati panorama laut.
+          </p>
+        </div>
+        <div class="destinasi-item-tiswan">
+          <img src="img/populer7.jpg" alt="Destinasi 7" />
+          <h3>Pantai Karang Nini</h3>
+          <p>
+            Tempat yang menarik untuk wisata budaya, menyaksikan situs cerita
+            rakyat dan menikmati keindahan alam di sekitarnya.
+          </p>
+        </div>
+
+        <div class="destinasi-item-tiswan">
+          <img src="img/populer8.jpg" alt="Destinasi 8" />
+          <h3>Curug Bojong</h3>
+          <p>
+            Air terjun tersembunyi di tengah hutan yang menawarkan keindahan
+            alam dan suasana yang tenang, ideal untuk petualangan dan relaksasi.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Destinasi Populer -->
 
-    <!-- Akitivitas Menarik -->
-    <section id="our-services-tiswan">
-      <div class="services-container-tiswan">
-        <h2>Pelayanan Kami</h2>
-        <p style="font-size: 1.2rem">
-          Kami menawarkan berbagai layanan terbaik untuk memastikan pengalaman
-          wisata Anda di Pangandaran tak terlupakan.
-        </p>
-        <div class="service-items-tiswan">
-          <div class="service-item-tiswan">
-            <i class="fas fa-hotel" style="font-size: 2rem"></i>
-            <h3>Hotel Mewah</h3>
-            <p>
-              Nikmati pengalaman menginap yang nyaman di hotel-hotel mewah kami.
-            </p>
-          </div>
-          <div class="service-item-tiswan">
-            <i class="fas fa-map-signs" style="font-size: 2rem"></i>
-            <h3>Panduan Perjalanan</h3>
-            <p>
-              Dapatkan panduan perjalanan dari ahli lokal untuk menjelajahi
-              Pangandaran.
-            </p>
-          </div>
-          <div class="service-item-tiswan">
-            <i class="fas fa-water" style="font-size: 2rem"></i>
-            <h3>Aktivitas Menarik</h3>
-            <p>
-              Ikuti berbagai aktivitas menarik seperti snorkeling, bersepeda,
-              dan banyak lagi.
-            </p>
-          </div>
-          <div class="service-item-tiswan">
-            <i class="fas fa-tags" style="font-size: 2rem"></i>
-            <h3>Paket Wisata Terjangkau</h3>
-            <p>
-              Pilih dari berbagai paket wisata yang terjangkau dan sesuai
-              anggaran Anda.
-            </p>
-          </div>
-        </div>
-      </div>
+    <!-- Lokasi -->
+    <section id="lokasi-kontak-tiswan" class="container-tiswan">
+      <h2>Lokasi</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63355.20935633983!2d108.65334759277578!3d-7.6694034999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6592709aaf3a6d%3A0xef995e6ff8e1d0d!2sPangandaran%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1618291234567!5m2!1sen!2sid"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
     </section>
-
-    <!-- Akitivitas Menarik -->
-
-    <!-- Video -->
-
-    <section id="video-tiswan">
-      <div class="video-wrapper-tiswan flex">
-        <video loop muted>
-          <source src="video/video-section.mp4" type="video/mp4" />
-        </video>
-        <button type="button" id="play-btn-tiswan">
-          <i class="fas fa-play"></i>
-        </button>
-      </div>
-    </section>
-
-    <!-- Video -->
+    <!-- Lokasi -->
 
     <!-- Footer -->
     <footer class="py-4-tiswan">
@@ -248,7 +237,7 @@
         </div>
 
         <div class="subscribe-form-tiswan footer-item-tiswan">
-          <h2>Berlangganan Newsletter!</h2>
+          <h2>Berlangganan Sekarang!</h2>
           <form class="flex-tiswan">
             <input
               type="email"
@@ -267,19 +256,5 @@
     <!-- Footer -->
 
     <script src="js/script.js"></script>
-    <script>
-      let videoTiswan = document.querySelector('.video-wrapper-tiswan video');
-      let playButtonTiswan = document.getElementById('play-btn-tiswan');
-
-      playButtonTiswan.addEventListener('click', () => {
-        if (videoTiswan.paused) {
-          videoTiswan.play();
-          playButtonTiswan.innerHTML = '<i class="fas fa-pause"></i>';
-        } else {
-          videoTiswan.pause();
-          playButtonTiswan.innerHTML = '<i class="fas fa-play"></i>';
-        }
-      });
-    </script>
   </body>
 </html>

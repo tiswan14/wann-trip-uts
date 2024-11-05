@@ -815,7 +815,7 @@ iframe {
 
 .artikel-content-tiswan p {
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .btn-read-more-tiswan {
@@ -825,6 +825,7 @@ iframe {
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  transition: var(--trans);
 }
 
 .btn-read-more-tiswan:hover {
@@ -887,6 +888,14 @@ iframe {
   border: 1px solid #cccccc;
   overflow: hidden;
   width: 350px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.destinasi-page-item-tiswan:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .destinasi-page-item-tiswan h3 {
@@ -900,12 +909,8 @@ iframe {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  transition: transform 0.3s ease;
   cursor: pointer;
-}
-
-.destinasi-page-item-tiswan img:hover {
-  transform: scale(1.1);
+  border-radius: 4px;
 }
 
 .destinasi-page-item-tiswan h3 {
@@ -990,7 +995,7 @@ iframe {
   }
 
   nav .nav-list-tiswan #under-list-tiswan li a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   nav .nav-list-tiswan #under-list-tiswan li:hover {
